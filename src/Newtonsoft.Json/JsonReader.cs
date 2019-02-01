@@ -33,7 +33,7 @@ using System.Numerics;
 using Json.Lite.Serialization;
 using Json.Lite.Utilities;
 #if NET20
-using Newtonsoft.Json.Utilities.LinqBridge;
+using Json.Lite.Utilities.LinqBridge;
 #else
 using System.Linq;
 #endif

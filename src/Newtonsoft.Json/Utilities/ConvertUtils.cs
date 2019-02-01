@@ -35,7 +35,7 @@ using System.Text.RegularExpressions;
 using Json.Lite.Serialization;
 using System.Reflection;
 #if NET20
-using Newtonsoft.Json.Utilities.LinqBridge;
+using Json.Lite.Utilities.LinqBridge;
 #endif
 #if !(DOTNET || PORTABLE40 || PORTABLE || UNITY3D)
 using System.Data.SqlTypes;

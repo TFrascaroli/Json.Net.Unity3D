@@ -30,7 +30,7 @@ using System.Reflection;
 using System.Text;
 using System.Collections;
 #if NET20
-using Newtonsoft.Json.Utilities.LinqBridge;
+using Json.Lite.Utilities.LinqBridge;
 #else
 using System.Linq;
 #endif

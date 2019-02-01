@@ -29,7 +29,7 @@ using System.IO;
 using System.Text;
 using System.Globalization;
 #if NET20
-using Newtonsoft.Json.Utilities.LinqBridge;
+using Json.Lite.Utilities.LinqBridge;
 #else
 using System.Linq;
 #endif

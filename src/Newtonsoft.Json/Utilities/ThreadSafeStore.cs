@@ -26,7 +26,7 @@
 using System;
 using System.Collections.Generic;
 #if NET20
-using Newtonsoft.Json.Utilities.LinqBridge;
+using Json.Lite.Utilities.LinqBridge;
 #endif
 using System.Threading;
 using Json.Lite.Serialization;

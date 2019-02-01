@@ -28,7 +28,7 @@ using System;
 #if NO_BSON
 
 // Dummy namespace
-namespace Newtonsoft.Json.Bson
+namespace Json.Lite.Bson
 {
     class Dummy { }
 }

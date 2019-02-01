@@ -28,7 +28,7 @@ using System.Collections.Generic;
 using System.Text;
 using Json.Lite.Utilities;
 #if !UNITY3D
-using Newtonsoft.Json.Schema;
+using Json.Lite.Schema;
 #endif
 
 namespace Json.Lite

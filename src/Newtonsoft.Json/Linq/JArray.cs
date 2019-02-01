@@ -263,7 +263,7 @@ namespace Json.Lite.Linq
         }
 
         /// <summary>
-        /// Gets or sets the <see cref="Newtonsoft.Json.Linq.JToken"/> at the specified index.
+        /// Gets or sets the <see cref="Json.Lite.Linq.JToken"/> at the specified index.
         /// </summary>
         /// <value></value>
         public JToken this[int index]

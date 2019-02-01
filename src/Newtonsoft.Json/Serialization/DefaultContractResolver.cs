@@ -26,7 +26,7 @@
 using System;
 using System.Collections;
 #if !UNITY3D
-using Newtonsoft.Json.Schema;
+using Json.Lite.Schema;
 #endif
 #if !(NET35 || NET20 || PORTABLE || PORTABLE40)
 using System.Collections.Concurrent;
@@ -50,7 +50,7 @@ using Json.Lite.Utilities;
 using Json.Lite.Linq;
 using System.Runtime.CompilerServices;
 #if NET20
-using Newtonsoft.Json.Utilities.LinqBridge;
+using Json.Lite.Utilities.LinqBridge;
 #else
 using System.Linq;
 

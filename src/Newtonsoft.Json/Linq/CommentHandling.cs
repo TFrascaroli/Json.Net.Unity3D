@@ -1,7 +1,7 @@
 ﻿#if NO_JSONLINQ
 
 // Dummy namespace
-namespace Newtonsoft.Json.Linq
+namespace Json.Lite.Linq
 {
     class Dummy { }
 }

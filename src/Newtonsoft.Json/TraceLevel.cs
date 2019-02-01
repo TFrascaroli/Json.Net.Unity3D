@@ -1,8 +1,8 @@
 ﻿
 #if (DOTNET || PORTABLE40 || PORTABLE)
-using Newtonsoft.Json.Serialization;
+using Json.Lite.Serialization;
 
-namespace Newtonsoft.Json
+namespace Json.Lite
 {
     /// <summary>
     /// Specifies what messages to output for the <see cref="ITraceWriter"/> class.

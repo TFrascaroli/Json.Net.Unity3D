@@ -31,7 +31,7 @@ using Json.Lite.Utilities;
 using System.Collections;
 
 #if NET20
-using Newtonsoft.Json.Utilities.LinqBridge;
+using Json.Lite.Utilities.LinqBridge;
 #endif
 
 namespace Json.Lite.Serialization
