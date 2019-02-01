@@ -34,7 +34,7 @@ using System.Linq;
 #endif
 using System.Reflection;
 
-namespace Newtonsoft.Json.Utilities
+namespace Json.Lite.Utilities
 {
     internal static class EnumUtils
     {

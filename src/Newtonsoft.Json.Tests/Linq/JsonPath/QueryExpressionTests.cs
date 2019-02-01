@@ -26,8 +26,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Linq.JsonPath;
+using Json.Lite.Linq;
+using Json.Lite.Linq.JsonPath;
 #if NETFX_CORE
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
@@ -41,7 +41,7 @@ using NUnit.Framework;
 
 #endif
 
-namespace Newtonsoft.Json.Tests.Linq.JsonPath
+namespace Json.Lite.Tests.Linq.JsonPath
 {
     [TestFixture]
     public class QueryExpressionTests : TestFixtureBase

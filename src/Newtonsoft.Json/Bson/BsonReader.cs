@@ -30,11 +30,11 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 using System.IO;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json.Utilities;
-using Newtonsoft.Json.Linq;
+using Json.Lite.Serialization;
+using Json.Lite.Utilities;
+using Json.Lite.Linq;
 
-namespace Newtonsoft.Json.Bson
+namespace Json.Lite.Bson
 {
     /// <summary>
     /// Represents a reader that provides fast, non-cached, forward-only access to serialized JSON data.

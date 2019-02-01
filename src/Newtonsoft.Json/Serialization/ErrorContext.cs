@@ -25,7 +25,7 @@
 
 using System;
 
-namespace Newtonsoft.Json.Serialization
+namespace Json.Lite.Serialization
 {
     /// <summary>
     /// Provides information surrounding an error.

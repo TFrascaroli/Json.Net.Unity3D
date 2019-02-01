@@ -33,9 +33,9 @@ using System.Globalization;
 #if !(PORTABLE || PORTABLE40 || NET35 || NET20)
 using System.Numerics;
 #endif
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 
-namespace Newtonsoft.Json
+namespace Json.Lite
 {
     internal enum ReadType
     {

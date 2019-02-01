@@ -34,7 +34,7 @@ using System.Linq;
 
 #endif
 
-namespace Newtonsoft.Json.Utilities
+namespace Json.Lite.Utilities
 {
     internal interface IWrappedDictionary
         : IDictionary

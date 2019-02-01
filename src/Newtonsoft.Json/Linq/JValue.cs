@@ -27,7 +27,7 @@
 
 using System;
 using System.Collections.Generic;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 using System.Globalization;
 #if !(NET35 || NET20 || PORTABLE40)
 using System.Dynamic;
@@ -38,7 +38,7 @@ using System.Numerics;
 
 #endif
 
-namespace Newtonsoft.Json.Linq
+namespace Json.Lite.Linq
 {
     /// <summary>
     /// Represents a value in JSON (string, integer, date, etc).

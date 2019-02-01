@@ -25,9 +25,9 @@
 
 using System;
 using System.Globalization;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 
-namespace Newtonsoft.Json.Converters
+namespace Json.Lite.Converters
 {
     /// <summary>
     /// Converts a <see cref="DateTime"/> to and from the ISO 8601 date format (e.g. 2008-04-12T12:53Z).

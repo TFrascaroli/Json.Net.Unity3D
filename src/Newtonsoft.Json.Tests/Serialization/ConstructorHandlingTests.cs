@@ -27,8 +27,8 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json.Tests.TestObjects;
+using Json.Lite.Serialization;
+using Json.Lite.Tests.TestObjects;
 #if NETFX_CORE
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
@@ -47,7 +47,7 @@ using System.Linq;
 
 #endif
 
-namespace Newtonsoft.Json.Tests.Serialization
+namespace Json.Lite.Tests.Serialization
 {
     [TestFixture]
     public class ConstructorHandlingTests : TestFixtureBase

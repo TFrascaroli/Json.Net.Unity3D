@@ -25,10 +25,10 @@
 
 using System;
 using System.Globalization;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Linq;
+using Json.Lite.Utilities;
 
-namespace Newtonsoft.Json.Tests.TestObjects
+namespace Json.Lite.Tests.TestObjects
 {
     public abstract class ConverterPrecedenceClassConverter : JsonConverter
     {

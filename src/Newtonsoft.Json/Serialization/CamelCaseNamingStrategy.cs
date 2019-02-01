@@ -1,6 +1,6 @@
-﻿using Newtonsoft.Json.Utilities;
+﻿using Json.Lite.Utilities;
 
-namespace Newtonsoft.Json.Serialization
+namespace Json.Lite.Serialization
 {
     /// <summary>
     /// A camel case naming strategy.

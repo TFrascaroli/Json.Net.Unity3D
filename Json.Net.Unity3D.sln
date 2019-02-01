@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newtonsoft.Json", "src\Newtonsoft.Json\Newtonsoft.Json.csproj", "{955B96F2-6AFB-4C2F-AAA5-9BFD6DDCB3BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json.Lite", "src\Newtonsoft.Json\Json.Lite.csproj", "{955B96F2-6AFB-4C2F-AAA5-9BFD6DDCB3BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newtonsoft.Json.Tests", "src\Newtonsoft.Json.Tests\Newtonsoft.Json.Tests.csproj", "{DD26402C-A73F-47F8-B8BC-F6D9353AA9E0}"
 EndProject
@@ -28,5 +28,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85811D9A-E9DB-4F53-AD2D-397F9AA10770}
 	EndGlobalSection
 EndGlobal

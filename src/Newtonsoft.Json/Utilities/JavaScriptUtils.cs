@@ -37,7 +37,7 @@ using System.Linq;
 
 #endif
 
-namespace Newtonsoft.Json.Utilities
+namespace Json.Lite.Utilities
 {
     internal static class BufferUtils
     {

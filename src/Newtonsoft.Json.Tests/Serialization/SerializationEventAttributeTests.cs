@@ -35,8 +35,8 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.Serialization;
 using System.Text;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json.Tests.TestObjects;
+using Json.Lite.Serialization;
+using Json.Lite.Tests.TestObjects;
 #if NETFX_CORE
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
@@ -48,10 +48,10 @@ using Assert = Newtonsoft.Json.Tests.XUnitAssert;
 #else
 using NUnit.Framework;
 #endif
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Linq;
+using Json.Lite.Utilities;
 
-namespace Newtonsoft.Json.Tests.Serialization
+namespace Json.Lite.Tests.Serialization
 {
     [TestFixture]
     public class SerializationEventAttributeTests : TestFixtureBase

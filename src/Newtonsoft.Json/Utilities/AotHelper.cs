@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Newtonsoft.Json.Utilities
+namespace Json.Lite.Utilities
 {
     public class AotHelper
     {

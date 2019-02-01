@@ -28,8 +28,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters;
 using System.Text;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Tests.TestObjects;
+using Json.Lite.Linq;
+using Json.Lite.Tests.TestObjects;
 #if NETFX_CORE
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
@@ -43,7 +43,7 @@ using NUnit.Framework;
 
 #endif
 
-namespace Newtonsoft.Json.Tests.Serialization
+namespace Json.Lite.Tests.Serialization
 {
     [TestFixture]
     public class PreserveReferencesHandlingTests : TestFixtureBase

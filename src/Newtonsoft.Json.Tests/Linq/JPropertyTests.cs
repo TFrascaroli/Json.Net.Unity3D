@@ -32,7 +32,7 @@ using Newtonsoft.Json.Utilities.LinqBridge;
 #else
 using System.Linq;
 #endif
-using Newtonsoft.Json.Linq;
+using Json.Lite.Linq;
 #if NETFX_CORE
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
@@ -46,7 +46,7 @@ using NUnit.Framework;
 #endif
 using System.IO;
 
-namespace Newtonsoft.Json.Tests.Linq
+namespace Json.Lite.Tests.Linq
 {
     [TestFixture]
     public class JPropertyTests : TestFixtureBase

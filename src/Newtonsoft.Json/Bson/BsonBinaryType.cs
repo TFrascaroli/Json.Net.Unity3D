@@ -35,7 +35,7 @@ namespace Newtonsoft.Json.Bson
 
 #else
 
-namespace Newtonsoft.Json.Bson
+namespace Json.Lite.Bson
 {
     internal enum BsonBinaryType : byte
     {

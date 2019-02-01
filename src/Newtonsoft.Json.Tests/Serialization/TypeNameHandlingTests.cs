@@ -34,15 +34,15 @@ using System.Collections.ObjectModel;
 using System.Dynamic;
 #endif
 using System.Text;
-using Newtonsoft.Json.Tests.Linq;
+using Json.Lite.Tests.Linq;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Runtime.Serialization.Formatters;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json.Tests.TestObjects;
+using Json.Lite.Linq;
+using Json.Lite.Serialization;
+using Json.Lite.Tests.TestObjects;
 #if NETFX_CORE
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
@@ -54,12 +54,12 @@ using Assert = Newtonsoft.Json.Tests.XUnitAssert;
 #else
 using NUnit.Framework;
 #endif
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 using System.Net;
 using System.Runtime.Serialization;
 using System.IO;
 
-namespace Newtonsoft.Json.Tests.Serialization
+namespace Json.Lite.Tests.Serialization
 {
     [TestFixture]
     public class TypeNameHandlingTests : TestFixtureBase
@@ -929,7 +929,7 @@ namespace Newtonsoft.Json.Tests.Serialization
             // {
             //   "Address": "http://www.google.com",
             //   "Body": {
-            //     "$type": "Newtonsoft.Json.Tests.Serialization.SearchDetails, Newtonsoft.Json.Tests",
+            //     "$type": "Json.Json.Tests.Serialization.SearchDetails, Json.Json.Tests",
             //     "Query": "Json.NET",
             //     "Language": "en-us"
             //   }
@@ -1822,7 +1822,7 @@ namespace Newtonsoft.Json.Tests.Serialization
             input.Add(new Stack<string>(new List<string> { "Seven", "Eight", "Nine" }));
 
             string serialized = JsonConvert.SerializeObject(input,
-                Newtonsoft.Json.Formatting.Indented,
+                Json.Lite.Formatting.Indented,
                 new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All, TypeNameAssemblyFormat = FormatterAssemblyStyle.Full } // TypeNameHandling.Auto will work
                 );
 

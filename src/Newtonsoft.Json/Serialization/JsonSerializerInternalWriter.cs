@@ -34,8 +34,8 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Security;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Linq;
+using Json.Lite.Utilities;
 using System.Runtime.Serialization;
 #if NET20
 using Newtonsoft.Json.Utilities.LinqBridge;
@@ -44,7 +44,7 @@ using System.Linq;
 
 #endif
 
-namespace Newtonsoft.Json.Serialization
+namespace Json.Lite.Serialization
 {
     internal class JsonSerializerInternalWriter : JsonSerializerInternalBase
     {

@@ -28,7 +28,7 @@
 using System;
 using System.Collections.Generic;
 #if !NO_JSONPATH
-using Newtonsoft.Json.Linq.JsonPath;
+using Json.Lite.Linq.JsonPath;
 #endif
 #if !(NET35 || NET20 || PORTABLE40)
 using System.Dynamic;
@@ -39,7 +39,7 @@ using System.IO;
 using System.Numerics;
 #endif
 using System.Text;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 using System.Diagnostics;
 using System.Globalization;
 using System.Collections;
@@ -50,7 +50,7 @@ using System.Linq;
 
 #endif
 
-namespace Newtonsoft.Json.Linq
+namespace Json.Lite.Linq
 {
     /// <summary>
     /// Represents an abstract JSON token.
@@ -333,7 +333,7 @@ namespace Newtonsoft.Json.Linq
         {
             JToken token = this[key];
 
-            // null check to fix MonoTouch issue - https://github.com/dolbz/Newtonsoft.Json/commit/a24e3062846b30ee505f3271ac08862bb471b822
+            // null check to fix MonoTouch issue - https://github.com/dolbz/Json.Json/commit/a24e3062846b30ee505f3271ac08862bb471b822
             return token == null ? default(T) : Extensions.Convert<JToken, T>(token);
         }
 

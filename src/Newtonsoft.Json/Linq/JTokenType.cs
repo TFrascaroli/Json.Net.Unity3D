@@ -25,7 +25,7 @@
 
 #if !NO_JSONLINQ
 
-namespace Newtonsoft.Json.Linq
+namespace Json.Lite.Linq
 {
     /// <summary>
     /// Specifies the type of token.

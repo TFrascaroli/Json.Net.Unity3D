@@ -29,7 +29,7 @@ using System.Collections.Generic;
 using System.Numerics;
 #endif
 using System.Text;
-using Newtonsoft.Json.Converters;
+using Json.Lite.Converters;
 #if NETFX_CORE
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
@@ -41,17 +41,17 @@ using Assert = Newtonsoft.Json.Tests.XUnitAssert;
 #else
 using NUnit.Framework;
 #endif
-using Newtonsoft.Json.Linq;
+using Json.Lite.Linq;
 using System.IO;
 #if NET20
 using Newtonsoft.Json.Utilities.LinqBridge;
 #else
 using System.Linq;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 
 #endif
 
-namespace Newtonsoft.Json.Tests.Linq
+namespace Json.Lite.Tests.Linq
 {
     [TestFixture]
     public class JTokenTests : TestFixtureBase

@@ -40,9 +40,9 @@ using Assert = Newtonsoft.Json.Tests.XUnitAssert;
 #else
 using NUnit.Framework;
 #endif
-using Newtonsoft.Json;
+using Json.Lite;
 using System.IO;
-using Newtonsoft.Json.Linq;
+using Json.Lite.Linq;
 #if NET20
 using Newtonsoft.Json.Utilities.LinqBridge;
 #else
@@ -50,7 +50,7 @@ using System.Linq;
 
 #endif
 
-namespace Newtonsoft.Json.Tests.Linq
+namespace Json.Lite.Tests.Linq
 {
     [TestFixture]
     public class JTokenWriterTest : TestFixtureBase
@@ -386,7 +386,7 @@ namespace Newtonsoft.Json.Tests.Linq
         {
             JTokenWriter writer = new JTokenWriter
             {
-                DateTimeZoneHandling = Json.DateTimeZoneHandling.Utc
+                DateTimeZoneHandling = Lite.DateTimeZoneHandling.Utc
             };
 
             writer.WriteValue(new DateTime(2000, 1, 1, 1, 1, 1, DateTimeKind.Unspecified));

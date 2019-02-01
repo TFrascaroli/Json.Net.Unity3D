@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Serialization;
+using Json.Lite.Converters;
+using Json.Lite.Serialization;
 #if NETFX_CORE
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
@@ -16,7 +16,7 @@ using NUnit.Framework;
 
 #endif
 
-namespace Newtonsoft.Json.Tests.Converters
+namespace Json.Lite.Tests.Converters
 {
     [TestFixture]
     public class KeyValuePairConverterTests : TestFixtureBase

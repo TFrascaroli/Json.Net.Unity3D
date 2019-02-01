@@ -29,9 +29,9 @@ using System.Collections.Generic;
 using Newtonsoft.Json.Utilities.LinqBridge;
 #endif
 using System.Threading;
-using Newtonsoft.Json.Serialization;
+using Json.Lite.Serialization;
 
-namespace Newtonsoft.Json.Utilities
+namespace Json.Lite.Utilities
 {
     internal class ThreadSafeStore<TKey, TValue>
     {

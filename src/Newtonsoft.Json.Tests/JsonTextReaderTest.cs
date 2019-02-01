@@ -27,7 +27,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
-using Newtonsoft.Json.Linq;
+using Json.Lite.Linq;
 #if !(NET20 || NET35 || PORTABLE40 || PORTABLE)
 using System.Numerics;
 #endif
@@ -43,7 +43,7 @@ using Assert = Newtonsoft.Json.Tests.XUnitAssert;
 #else
 using NUnit.Framework;
 #endif
-using Newtonsoft.Json;
+using Json.Lite;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
@@ -54,9 +54,9 @@ using Newtonsoft.Json.Utilities.LinqBridge;
 using System.Linq;
 #endif
 using System.Xml;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 
-namespace Newtonsoft.Json.Tests
+namespace Json.Lite.Tests
 {
     [TestFixture]
     public class JsonTextReaderTest : TestFixtureBase
@@ -156,7 +156,7 @@ namespace Newtonsoft.Json.Tests
             string json = "[9223372036854775807, 1.7976931348623157E+308, 792281625142643375935439503.35, 792281625142643375935555555555555555555555555555555555555555555555555439503.35]";
 
             JsonTextReader reader = new JsonTextReader(new StringReader(json));
-            reader.FloatParseHandling = Json.FloatParseHandling.Decimal;
+            reader.FloatParseHandling = Lite.FloatParseHandling.Decimal;
 
             Assert.IsTrue(reader.Read());
             Assert.AreEqual(JsonToken.StartArray, reader.TokenType);
@@ -535,7 +535,7 @@ third line", jsonTextReader.Value);
             string json = "[1.0,1,9.9,1E-06]";
 
             JsonTextReader reader = new JsonTextReader(new StringReader(json));
-            reader.FloatParseHandling = Json.FloatParseHandling.Decimal;
+            reader.FloatParseHandling = Lite.FloatParseHandling.Decimal;
 
             Assert.IsTrue(reader.Read());
             Assert.AreEqual(JsonToken.StartArray, reader.TokenType);
@@ -570,7 +570,7 @@ third line", jsonTextReader.Value);
             string json = "[NaN]";
 
             JsonTextReader reader = new JsonTextReader(new StringReader(json));
-            reader.FloatParseHandling = Json.FloatParseHandling.Decimal;
+            reader.FloatParseHandling = Lite.FloatParseHandling.Decimal;
 
             Assert.IsTrue(reader.Read());
             Assert.AreEqual(JsonToken.StartArray, reader.TokenType);
@@ -1782,7 +1782,7 @@ third line", jsonTextReader.Value);
             ExceptionAssert.Throws<JsonReaderException>(() => reader.ReadAsDecimal(), "Unexpected character encountered while parsing number: s. Path '', line 1, position 77.");
 
             reader = new JsonTextReader(new StringReader("9999999999999999999999999999999999999999999999999999999999999999999999999999asdasdasd"));
-            reader.FloatParseHandling = Json.FloatParseHandling.Decimal;
+            reader.FloatParseHandling = Lite.FloatParseHandling.Decimal;
             ExceptionAssert.Throws<JsonReaderException>(() => reader.Read(), "Unexpected character encountered while parsing number: s. Path '', line 1, position 77.");
 
             reader = new JsonTextReader(new StringReader("1E-06"));
@@ -4056,7 +4056,7 @@ null//comment
             string json = @"[""1970-01-01T00:00:00Z"",""\/Date(0)\/""]";
 
             JsonTextReader reader = new JsonTextReader(new StringReader(json));
-            reader.DateParseHandling = Json.DateParseHandling.DateTime;
+            reader.DateParseHandling = Lite.DateParseHandling.DateTime;
 
             Assert.IsTrue(reader.Read());
             Assert.IsTrue(reader.Read());
@@ -4069,7 +4069,7 @@ null//comment
 
 #if !NET20
             reader = new JsonTextReader(new StringReader(json));
-            reader.DateParseHandling = Json.DateParseHandling.DateTimeOffset;
+            reader.DateParseHandling = Lite.DateParseHandling.DateTimeOffset;
 
             Assert.IsTrue(reader.Read());
             Assert.IsTrue(reader.Read());
@@ -4082,7 +4082,7 @@ null//comment
 #endif
 
             reader = new JsonTextReader(new StringReader(json));
-            reader.DateParseHandling = Json.DateParseHandling.None;
+            reader.DateParseHandling = Lite.DateParseHandling.None;
 
             Assert.IsTrue(reader.Read());
             Assert.IsTrue(reader.Read());
@@ -4095,7 +4095,7 @@ null//comment
 
 #if !NET20
             reader = new JsonTextReader(new StringReader(json));
-            reader.DateParseHandling = Json.DateParseHandling.DateTime;
+            reader.DateParseHandling = Lite.DateParseHandling.DateTime;
 
             Assert.IsTrue(reader.Read());
             reader.ReadAsDateTimeOffset();
@@ -4107,7 +4107,7 @@ null//comment
             Assert.IsTrue(reader.Read());
 
             reader = new JsonTextReader(new StringReader(json));
-            reader.DateParseHandling = Json.DateParseHandling.DateTimeOffset;
+            reader.DateParseHandling = Lite.DateParseHandling.DateTimeOffset;
 
             Assert.IsTrue(reader.Read());
             reader.ReadAsDateTime();
@@ -4264,7 +4264,7 @@ null//comment
 
 #if !DNXCORE50
         [Test]
-        [Ignore]
+        [Ignore("PORQUE SI COJONES")]
         public void ReadFromNetworkStream()
         {
             const int port = 11999;

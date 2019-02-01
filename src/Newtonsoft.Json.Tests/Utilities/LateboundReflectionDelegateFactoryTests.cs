@@ -1,5 +1,5 @@
 using System.Reflection;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 #if NETFX_CORE
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
@@ -18,7 +18,7 @@ using System.Linq;
 
 #endif
 
-namespace Newtonsoft.Json.Tests.Utilities
+namespace Json.Lite.Tests.Utilities
 {
     public class OutAndRefTestClass
     {

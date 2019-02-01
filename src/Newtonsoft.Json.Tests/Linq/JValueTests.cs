@@ -27,7 +27,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization;
-using Newtonsoft.Json.Tests.TestObjects;
+using Json.Lite.Tests.TestObjects;
 #if !(NET20 || NET35 || PORTABLE)
 using System.Numerics;
 #endif
@@ -43,16 +43,16 @@ using Assert = Newtonsoft.Json.Tests.XUnitAssert;
 #else
 using NUnit.Framework;
 #endif
-using Newtonsoft.Json.Linq;
+using Json.Lite.Linq;
 using System.Globalization;
 #if NET20
 using Newtonsoft.Json.Utilities.LinqBridge;
 #else
 using System.Linq;
 #endif
-using Newtonsoft.Json.Tests.Serialization;
+using Json.Lite.Tests.Serialization;
 
-namespace Newtonsoft.Json.Tests.Linq
+namespace Json.Lite.Tests.Linq
 {
     [TestFixture]
     public class JValueTests : TestFixtureBase
@@ -100,7 +100,7 @@ namespace Newtonsoft.Json.Tests.Linq
             JValue v = (JValue)JToken.ReadFrom(
                 new JsonTextReader(new StringReader("9.9"))
                 {
-                    FloatParseHandling = Json.FloatParseHandling.Decimal
+                    FloatParseHandling = Lite.FloatParseHandling.Decimal
                 });
 
             Assert.AreEqual(9.9m, v.Value);

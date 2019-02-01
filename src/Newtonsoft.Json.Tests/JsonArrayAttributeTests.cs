@@ -36,7 +36,7 @@ using NUnit.Framework;
 
 #endif
 
-namespace Newtonsoft.Json.Tests
+namespace Json.Lite.Tests
 {
     [TestFixture]
     public class JsonArrayAttributeTests : TestFixtureBase

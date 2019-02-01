@@ -30,7 +30,7 @@ using System.IO;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Text.RegularExpressions;
-using Newtonsoft.Json.Converters;
+using Json.Lite.Converters;
 #if NETFX_CORE
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
@@ -42,9 +42,9 @@ using Assert = Newtonsoft.Json.Tests.XUnitAssert;
 #else
 using NUnit.Framework;
 #endif
-using Newtonsoft.Json.Tests.TestObjects;
+using Json.Lite.Tests.TestObjects;
 
-namespace Newtonsoft.Json.Tests.Converters
+namespace Json.Lite.Tests.Converters
 {
     [TestFixture]
     public class StringEnumConverterTests : TestFixtureBase

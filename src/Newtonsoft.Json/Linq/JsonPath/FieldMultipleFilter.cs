@@ -7,9 +7,9 @@ using Newtonsoft.Json.Utilities.LinqBridge;
 #else
 using System.Linq;
 #endif
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 
-namespace Newtonsoft.Json.Linq.JsonPath
+namespace Json.Lite.Linq.JsonPath
 {
     internal class FieldMultipleFilter : PathFilter
     {

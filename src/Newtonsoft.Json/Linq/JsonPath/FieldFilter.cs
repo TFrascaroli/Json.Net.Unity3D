@@ -2,9 +2,9 @@
 
 using System.Collections.Generic;
 using System.Globalization;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 
-namespace Newtonsoft.Json.Linq.JsonPath
+namespace Json.Lite.Linq.JsonPath
 {
     internal class FieldFilter : PathFilter
     {

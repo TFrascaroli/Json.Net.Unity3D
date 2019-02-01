@@ -23,7 +23,7 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace Newtonsoft.Json
+namespace Json.Lite
 {
     /// <summary>
     /// Provides an interface to enable a class to return line and position information.

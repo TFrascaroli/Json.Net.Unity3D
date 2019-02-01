@@ -28,10 +28,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Runtime.Serialization.Formatters;
-using Newtonsoft.Json.Serialization;
+using Json.Lite.Serialization;
 using System.Runtime.Serialization;
 
-namespace Newtonsoft.Json
+namespace Json.Lite
 {
     /// <summary>
     /// Specifies the settings on a <see cref="JsonSerializer"/> object.

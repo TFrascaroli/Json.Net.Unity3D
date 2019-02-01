@@ -23,7 +23,7 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 #endregion
 
-using Newtonsoft.Json.Serialization;
+using Json.Lite.Serialization;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -36,7 +36,7 @@ using System.Linq;
 
 #endif
 
-namespace Newtonsoft.Json.Utilities
+namespace Json.Lite.Utilities
 {
     internal class ReflectionMember
     {

@@ -30,7 +30,7 @@ using System.Xml;
 #endif
 using System.Globalization;
 
-namespace Newtonsoft.Json.Utilities
+namespace Json.Lite.Utilities
 {
     internal static class DateTimeUtils
     {

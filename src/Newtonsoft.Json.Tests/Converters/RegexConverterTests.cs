@@ -27,10 +27,10 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
-using Newtonsoft.Json.Bson;
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Bson;
+using Json.Lite.Converters;
+using Json.Lite.Serialization;
+using Json.Lite.Utilities;
 #if NETFX_CORE
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
@@ -42,9 +42,9 @@ using Assert = Newtonsoft.Json.Tests.XUnitAssert;
 #else
 using NUnit.Framework;
 #endif
-using Newtonsoft.Json.Tests.TestObjects;
+using Json.Lite.Tests.TestObjects;
 
-namespace Newtonsoft.Json.Tests.Converters
+namespace Json.Lite.Tests.Converters
 {
     [TestFixture]
     public class RegexConverterTests : TestFixtureBase

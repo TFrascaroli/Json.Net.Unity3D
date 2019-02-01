@@ -27,7 +27,7 @@ using System;
 using System.Globalization;
 using System.Runtime.Serialization;
 
-namespace Newtonsoft.Json.Tests.TestObjects
+namespace Json.Lite.Tests.TestObjects
 {
 #if !(NETFX_CORE || DNXCORE50)
     public struct Ratio : IConvertible, IFormattable, ISerializable

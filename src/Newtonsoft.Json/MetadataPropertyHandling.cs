@@ -27,7 +27,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Newtonsoft.Json
+namespace Json.Lite
 {
     /// <summary>
     /// Specifies metadata property handling options for the <see cref="JsonSerializer"/>.

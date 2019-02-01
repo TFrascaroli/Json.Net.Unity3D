@@ -25,7 +25,7 @@
 
 using System;
 using System.Collections.Generic;
-using Newtonsoft.Json.Serialization;
+using Json.Lite.Serialization;
 #if NETFX_CORE
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
@@ -37,12 +37,12 @@ using Assert = Newtonsoft.Json.Tests.XUnitAssert;
 #else
 using NUnit.Framework;
 #endif
-using Newtonsoft.Json.Tests.TestObjects;
-using Newtonsoft.Json.Linq;
+using Json.Lite.Tests.TestObjects;
+using Json.Lite.Linq;
 using System.Reflection;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 
-namespace Newtonsoft.Json.Tests.Serialization
+namespace Json.Lite.Tests.Serialization
 {
     [TestFixture]
     public class CamelCasePropertyNamesContractResolverTests : TestFixtureBase

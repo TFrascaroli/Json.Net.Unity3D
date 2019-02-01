@@ -2,7 +2,7 @@
 
 using System;
 
-namespace Newtonsoft.Json.Linq
+namespace Json.Lite.Linq
 {
     /// <summary>
     /// Specifies how null value properties are merged.

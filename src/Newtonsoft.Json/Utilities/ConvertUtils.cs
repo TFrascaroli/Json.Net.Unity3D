@@ -32,7 +32,7 @@ using System.Numerics;
 #endif
 using System.Text;
 using System.Text.RegularExpressions;
-using Newtonsoft.Json.Serialization;
+using Json.Lite.Serialization;
 using System.Reflection;
 #if NET20
 using Newtonsoft.Json.Utilities.LinqBridge;
@@ -42,7 +42,7 @@ using System.Data.SqlTypes;
 
 #endif
 
-namespace Newtonsoft.Json.Utilities
+namespace Json.Lite.Utilities
 {
     internal enum PrimitiveTypeCode
     {

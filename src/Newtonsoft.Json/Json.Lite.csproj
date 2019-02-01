@@ -7,7 +7,7 @@
     <ProjectGuid>{955B96F2-6AFB-4C2F-AAA5-9BFD6DDCB3BD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Newtonsoft.Json</RootNamespace>
+    <RootNamespace>Json.Lite</RootNamespace>
     <AssemblyName>Json.Lite</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

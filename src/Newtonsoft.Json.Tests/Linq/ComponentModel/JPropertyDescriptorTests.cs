@@ -25,9 +25,9 @@
 
 #if !(NETFX_CORE || PORTABLE || PORTABLE40 || DNXCORE50)
 using NUnit.Framework;
-using Newtonsoft.Json.Linq;
+using Json.Lite.Linq;
 
-namespace Newtonsoft.Json.Tests.Linq.ComponentModel
+namespace Json.Lite.Tests.Linq.ComponentModel
 {
     [TestFixture]
     public class JPropertyDescriptorTests : TestFixtureBase

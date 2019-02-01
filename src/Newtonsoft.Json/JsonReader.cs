@@ -30,15 +30,15 @@ using System.Globalization;
 #if !(NET20 || NET35 || PORTABLE40 || PORTABLE)
 using System.Numerics;
 #endif
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Serialization;
+using Json.Lite.Utilities;
 #if NET20
 using Newtonsoft.Json.Utilities.LinqBridge;
 #else
 using System.Linq;
 #endif
 
-namespace Newtonsoft.Json
+namespace Json.Lite
 {
     /// <summary>
     /// Represents a reader that provides fast, non-cached, forward-only access to serialized JSON data.

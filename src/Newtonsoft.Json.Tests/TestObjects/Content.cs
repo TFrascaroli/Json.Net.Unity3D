@@ -26,7 +26,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Newtonsoft.Json.Tests.TestObjects
+namespace Json.Lite.Tests.TestObjects
 {
     [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
     public class Content : IEnumerable<Content>

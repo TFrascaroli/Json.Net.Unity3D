@@ -32,26 +32,26 @@ using System.Numerics;
 #if !(NET20 || NET35 || PORTABLE40)
 using System.Threading.Tasks;
 #endif
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Linq;
+using Json.Lite.Utilities;
 #if !(UNITY3D)
 using System.Xml;
 #endif
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Serialization;
+using Json.Lite.Converters;
+using Json.Lite.Serialization;
 using System.Text;
 #if !(NET20 || PORTABLE40 || UNITY3D)
 using System.Xml.Linq;
 
 #endif
 
-namespace Newtonsoft.Json
+namespace Json.Lite
 {
     /// <summary>
     /// Provides methods for converting between common language runtime types and JSON types.
     /// </summary>
     /// <example>
-    ///   <code lang="cs" source="..\Src\Newtonsoft.Json.Tests\Documentation\SerializationTests.cs" region="SerializeObject" title="Serializing and Deserializing JSON with JsonConvert" />
+    ///   <code lang="cs" source="..\Src\Json.Json.Tests\Documentation\SerializationTests.cs" region="SerializeObject" title="Serializing and Deserializing JSON with JsonConvert" />
     /// </example>
     public static class JsonConvert
     {

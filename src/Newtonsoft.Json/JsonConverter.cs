@@ -26,12 +26,12 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 #if !UNITY3D
 using Newtonsoft.Json.Schema;
 #endif
 
-namespace Newtonsoft.Json
+namespace Json.Lite
 {
     /// <summary>
     /// Converts an object to and from JSON.

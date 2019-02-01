@@ -25,9 +25,9 @@
 
 using System;
 using System.Reflection;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 
-namespace Newtonsoft.Json.Converters
+namespace Json.Lite.Converters
 {
     /// <summary>
     /// Create a custom object

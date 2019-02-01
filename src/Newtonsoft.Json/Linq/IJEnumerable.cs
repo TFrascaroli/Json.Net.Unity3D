@@ -27,7 +27,7 @@
 
 using System.Collections.Generic;
 
-namespace Newtonsoft.Json.Linq
+namespace Json.Lite.Linq
 {
     /// <summary>
     /// Represents a collection of <see cref="JToken"/> objects.

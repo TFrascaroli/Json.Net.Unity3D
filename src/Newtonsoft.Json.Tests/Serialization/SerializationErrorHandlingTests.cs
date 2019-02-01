@@ -27,9 +27,9 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json.Tests.TestObjects;
+using Json.Lite.Converters;
+using Json.Lite.Serialization;
+using Json.Lite.Tests.TestObjects;
 #if NET20
 using Newtonsoft.Json.Utilities.LinqBridge;
 #else
@@ -47,10 +47,10 @@ using Assert = Newtonsoft.Json.Tests.XUnitAssert;
 using NUnit.Framework;
 #endif
 using System.IO;
-using Newtonsoft.Json.Linq;
-using ErrorEventArgs = Newtonsoft.Json.Serialization.ErrorEventArgs;
+using Json.Lite.Linq;
+using ErrorEventArgs = Json.Lite.Serialization.ErrorEventArgs;
 
-namespace Newtonsoft.Json.Tests.Serialization
+namespace Json.Lite.Tests.Serialization
 {
     [TestFixture]
     public class SerializationErrorHandlingTests : TestFixtureBase

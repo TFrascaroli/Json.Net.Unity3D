@@ -8,7 +8,7 @@ namespace Newtonsoft.Json.Linq
 
 #else
 
-namespace Newtonsoft.Json.Linq
+namespace Json.Lite.Linq
 {
     /// <summary>
     /// Specifies how JSON comments are handled when loading JSON.

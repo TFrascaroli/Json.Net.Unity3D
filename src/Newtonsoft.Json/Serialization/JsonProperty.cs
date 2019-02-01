@@ -25,13 +25,13 @@
 
 using System;
 using System.Reflection;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 
 #if NET20
 using Newtonsoft.Json.Utilities.LinqBridge;
 #endif
 
-namespace Newtonsoft.Json.Serialization
+namespace Json.Lite.Serialization
 {
     /// <summary>
     /// Maps a JSON property to a .NET member or constructor parameter.

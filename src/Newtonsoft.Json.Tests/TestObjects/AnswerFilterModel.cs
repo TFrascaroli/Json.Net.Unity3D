@@ -32,7 +32,7 @@ using System.Linq;
 
 #endif
 
-namespace Newtonsoft.Json.Tests.TestObjects
+namespace Json.Lite.Tests.TestObjects
 {
 #if !(NETFX_CORE || PORTABLE || DNXCORE50)
     [Serializable]

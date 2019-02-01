@@ -24,7 +24,7 @@
 #endregion
 
 using System;
-using Newtonsoft.Json.Tests.TestObjects;
+using Json.Lite.Tests.TestObjects;
 #if NETFX_CORE
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
@@ -36,11 +36,11 @@ using Assert = Newtonsoft.Json.Tests.XUnitAssert;
 #else
 using NUnit.Framework;
 #endif
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Converters;
+using Json.Lite.Utilities;
 using System.Globalization;
 
-namespace Newtonsoft.Json.Tests.Converters
+namespace Json.Lite.Tests.Converters
 {
     [TestFixture]
     public class IsoDateTimeConverterTests : TestFixtureBase

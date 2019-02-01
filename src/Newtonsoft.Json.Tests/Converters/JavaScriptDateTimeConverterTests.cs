@@ -36,11 +36,11 @@ using Assert = Newtonsoft.Json.Tests.XUnitAssert;
 #else
 using NUnit.Framework;
 #endif
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Tests.Serialization;
-using Newtonsoft.Json.Tests.TestObjects;
+using Json.Lite.Converters;
+using Json.Lite.Tests.Serialization;
+using Json.Lite.Tests.TestObjects;
 
-namespace Newtonsoft.Json.Tests.Converters
+namespace Json.Lite.Tests.Converters
 {
     [TestFixture]
     public class JavaScriptDateTimeConverterTests : TestFixtureBase

@@ -25,7 +25,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Newtonsoft.Json.Tests.TestObjects
+namespace Json.Lite.Tests.TestObjects
 {
 #if !(NET20 || NET35)
     public class PocoDataContractSerializationAttributesClass

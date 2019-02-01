@@ -24,9 +24,9 @@
 #endregion
 
 using System.Globalization;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 
-namespace Newtonsoft.Json.Serialization
+namespace Json.Lite.Serialization
 {
     /// <summary>
     /// Resolves member mappings for a type, camel casing property names.

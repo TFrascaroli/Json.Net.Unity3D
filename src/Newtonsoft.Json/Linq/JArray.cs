@@ -28,17 +28,17 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 using System.IO;
 using System.Globalization;
 
-namespace Newtonsoft.Json.Linq
+namespace Json.Lite.Linq
 {
     /// <summary>
     /// Represents a JSON array.
     /// </summary>
     /// <example>
-    ///   <code lang="cs" source="..\Src\Newtonsoft.Json.Tests\Documentation\LinqToJsonTests.cs" region="LinqToJsonCreateParseArray" title="Parsing a JSON Array from Text" />
+    ///   <code lang="cs" source="..\Src\Json.Json.Tests\Documentation\LinqToJsonTests.cs" region="LinqToJsonCreateParseArray" title="Parsing a JSON Array from Text" />
     /// </example>
     public class JArray : JContainer, IList<JToken>
     {
@@ -155,7 +155,7 @@ namespace Newtonsoft.Json.Linq
         /// <param name="json">A <see cref="String"/> that contains JSON.</param>
         /// <returns>A <see cref="JArray"/> populated from the string that contains JSON.</returns>
         /// <example>
-        ///   <code lang="cs" source="..\Src\Newtonsoft.Json.Tests\Documentation\LinqToJsonTests.cs" region="LinqToJsonCreateParseArray" title="Parsing a JSON Array from Text" />
+        ///   <code lang="cs" source="..\Src\Json.Json.Tests\Documentation\LinqToJsonTests.cs" region="LinqToJsonCreateParseArray" title="Parsing a JSON Array from Text" />
         /// </example>
         public new static JArray Parse(string json)
         {
@@ -170,7 +170,7 @@ namespace Newtonsoft.Json.Linq
         /// If this is null, default load settings will be used.</param>
         /// <returns>A <see cref="JArray"/> populated from the string that contains JSON.</returns>
         /// <example>
-        ///   <code lang="cs" source="..\Src\Newtonsoft.Json.Tests\Documentation\LinqToJsonTests.cs" region="LinqToJsonCreateParseArray" title="Parsing a JSON Array from Text" />
+        ///   <code lang="cs" source="..\Src\Json.Json.Tests\Documentation\LinqToJsonTests.cs" region="LinqToJsonCreateParseArray" title="Parsing a JSON Array from Text" />
         /// </example>
         public new static JArray Parse(string json, JsonLoadSettings settings)
         {

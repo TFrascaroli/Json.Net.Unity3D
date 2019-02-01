@@ -24,9 +24,9 @@
 #endregion
 
 using System.Collections.Generic;
-using Newtonsoft.Json.Tests.TestObjects;
+using Json.Lite.Tests.TestObjects;
 
-namespace Newtonsoft.Json.Tests.TestObjects
+namespace Json.Lite.Tests.TestObjects
 {
     public class DictionaryInterfaceClass
     {

@@ -25,7 +25,7 @@
 
 #if !NO_BSON
 
-namespace Newtonsoft.Json.Bson
+namespace Json.Lite.Bson
 {
     internal enum BsonType : sbyte
     {

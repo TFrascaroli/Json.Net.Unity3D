@@ -26,7 +26,7 @@
 using System;
 using System.ComponentModel;
 
-namespace Newtonsoft.Json.Tests.TestObjects
+namespace Json.Lite.Tests.TestObjects
 {
     public class Invoice
     {

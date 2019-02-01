@@ -37,7 +37,7 @@ using System.Dynamic;
 using System.Linq.Expressions;
 #endif
 using System.IO;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 using System.Globalization;
 #if NET20
 using Newtonsoft.Json.Utilities.LinqBridge;
@@ -46,13 +46,13 @@ using System.Linq;
 
 #endif
 
-namespace Newtonsoft.Json.Linq
+namespace Json.Lite.Linq
 {
     /// <summary>
     /// Represents a JSON object.
     /// </summary>
     /// <example>
-    ///   <code lang="cs" source="..\Src\Newtonsoft.Json.Tests\Documentation\LinqToJsonTests.cs" region="LinqToJsonCreateParse" title="Parsing a JSON Object from Text" />
+    ///   <code lang="cs" source="..\Src\Json.Json.Tests\Documentation\LinqToJsonTests.cs" region="LinqToJsonCreateParse" title="Parsing a JSON Object from Text" />
     /// </example>
     public class JObject : JContainer, IDictionary<string, JToken>, INotifyPropertyChanged
 #if !(DOTNET || PORTABLE40 || PORTABLE || UNITY3D)
@@ -398,7 +398,7 @@ namespace Newtonsoft.Json.Linq
         /// <param name="json">A <see cref="String"/> that contains JSON.</param>
         /// <returns>A <see cref="JObject"/> populated from the string that contains JSON.</returns>
         /// <example>
-        ///   <code lang="cs" source="..\Src\Newtonsoft.Json.Tests\Documentation\LinqToJsonTests.cs" region="LinqToJsonCreateParse" title="Parsing a JSON Object from Text" />
+        ///   <code lang="cs" source="..\Src\Json.Json.Tests\Documentation\LinqToJsonTests.cs" region="LinqToJsonCreateParse" title="Parsing a JSON Object from Text" />
         /// </example>
         public new static JObject Parse(string json)
         {
@@ -413,7 +413,7 @@ namespace Newtonsoft.Json.Linq
         /// If this is null, default load settings will be used.</param>
         /// <returns>A <see cref="JObject"/> populated from the string that contains JSON.</returns>
         /// <example>
-        ///   <code lang="cs" source="..\Src\Newtonsoft.Json.Tests\Documentation\LinqToJsonTests.cs" region="LinqToJsonCreateParse" title="Parsing a JSON Object from Text" />
+        ///   <code lang="cs" source="..\Src\Json.Json.Tests\Documentation\LinqToJsonTests.cs" region="LinqToJsonCreateParse" title="Parsing a JSON Object from Text" />
         /// </example>
         public new static JObject Parse(string json, JsonLoadSettings settings)
         {

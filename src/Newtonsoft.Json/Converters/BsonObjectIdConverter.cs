@@ -26,11 +26,11 @@
 #if !NO_BSON
 
 using System;
-using Newtonsoft.Json.Bson;
+using Json.Lite.Bson;
 using System.Globalization;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 
-namespace Newtonsoft.Json.Converters
+namespace Json.Lite.Converters
 {
     /// <summary>
     /// Converts a <see cref="BsonObjectId"/> to and from JSON and BSON.

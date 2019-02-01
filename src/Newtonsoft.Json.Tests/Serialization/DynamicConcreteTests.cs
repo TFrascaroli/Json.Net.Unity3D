@@ -26,8 +26,8 @@
 #if !(NETFX_CORE || PORTABLE || DNXCORE50)
 using System.Reflection;
 using System.Reflection.Emit;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json.Tests.TestObjects;
+using Json.Lite.Serialization;
+using Json.Lite.Tests.TestObjects;
 using System;
 #if NET20
 using Newtonsoft.Json.Utilities.LinqBridge;
@@ -47,7 +47,7 @@ using NUnit.Framework;
 
 #endif
 
-namespace Newtonsoft.Json.Tests.Serialization
+namespace Json.Lite.Tests.Serialization
 {
     [TestFixture]
     public class DynamicConcreteTests : TestFixtureBase

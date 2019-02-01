@@ -25,7 +25,7 @@
 
 using System;
 using System.Collections.Generic;
-using Newtonsoft.Json.Linq.JsonPath;
+using Json.Lite.Linq.JsonPath;
 #if NETFX_CORE
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
@@ -37,7 +37,7 @@ using Assert = Newtonsoft.Json.Tests.XUnitAssert;
 #else
 using NUnit.Framework;
 #endif
-using Newtonsoft.Json.Linq;
+using Json.Lite.Linq;
 #if NET20
 using Newtonsoft.Json.Utilities.LinqBridge;
 #else
@@ -45,7 +45,7 @@ using System.Linq;
 
 #endif
 
-namespace Newtonsoft.Json.Tests.Linq.JsonPath
+namespace Json.Lite.Tests.Linq.JsonPath
 {
     [TestFixture]
     public class JPathParseTests : TestFixtureBase

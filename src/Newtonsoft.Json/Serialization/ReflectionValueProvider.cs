@@ -25,10 +25,10 @@
 
 using System;
 using System.Reflection;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 using System.Globalization;
 
-namespace Newtonsoft.Json.Serialization
+namespace Json.Lite.Serialization
 {
     /// <summary>
     /// Get and set values for a <see cref="MemberInfo"/> using reflection.

@@ -26,7 +26,7 @@
 using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
 
-namespace Newtonsoft.Json.Tests.TestObjects
+namespace Json.Lite.Tests.TestObjects
 {
     public class SerializationEventTestList : Collection<decimal>
     {

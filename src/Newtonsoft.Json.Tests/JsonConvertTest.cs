@@ -39,12 +39,12 @@ using System.Text;
 using System.Threading.Tasks;
 #endif
 using System.Xml;
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json.Tests.Serialization;
-using Newtonsoft.Json.Tests.TestObjects;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Converters;
+using Json.Lite.Linq;
+using Json.Lite.Serialization;
+using Json.Lite.Tests.Serialization;
+using Json.Lite.Tests.TestObjects;
+using Json.Lite.Utilities;
 #if NETFX_CORE
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
@@ -58,7 +58,7 @@ using NUnit.Framework;
 
 #endif
 
-namespace Newtonsoft.Json.Tests
+namespace Json.Lite.Tests
 {
     [TestFixture]
     public class JsonConvertTest : TestFixtureBase

@@ -38,8 +38,8 @@ using System.Numerics;
 #endif
 using System.Reflection;
 using System.Runtime.Serialization;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Linq;
+using Json.Lite.Utilities;
 #if NET20
 using Newtonsoft.Json.Utilities.LinqBridge;
 #else
@@ -47,7 +47,7 @@ using System.Linq;
 
 #endif
 
-namespace Newtonsoft.Json.Serialization
+namespace Json.Lite.Serialization
 {
     internal class JsonSerializerInternalReader : JsonSerializerInternalBase
     {

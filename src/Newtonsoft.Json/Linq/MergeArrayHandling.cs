@@ -1,6 +1,6 @@
 #if !NO_JSONLINQ
 
-namespace Newtonsoft.Json.Linq
+namespace Json.Lite.Linq
 {
     /// <summary>
     /// Specifies how JSON arrays are merged together.

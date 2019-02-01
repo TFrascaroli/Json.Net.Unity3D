@@ -25,7 +25,7 @@
 
 using System;
 
-namespace Newtonsoft.Json.Tests.TestObjects
+namespace Json.Lite.Tests.TestObjects
 {
     /// <summary>
     /// What types of events are there? Just sticking to a basic set of four for now.

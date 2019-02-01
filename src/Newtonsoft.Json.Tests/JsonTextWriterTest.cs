@@ -46,13 +46,13 @@ using Assert = Newtonsoft.Json.Tests.XUnitAssert;
 #else
 using NUnit.Framework;
 #endif
-using Newtonsoft.Json;
+using Json.Lite;
 using System.IO;
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Converters;
+using Json.Lite.Linq;
+using Json.Lite.Utilities;
 
-namespace Newtonsoft.Json.Tests
+namespace Json.Lite.Tests
 {
     [TestFixture]
     public class JsonTextWriterTest : TestFixtureBase
@@ -1242,7 +1242,7 @@ _____'propertyName': NaN,
             StringWriter sw = new StringWriter();
             JsonTextWriter writer = new JsonTextWriter(sw)
             {
-                DateTimeZoneHandling = Json.DateTimeZoneHandling.Utc
+                DateTimeZoneHandling = Lite.DateTimeZoneHandling.Utc
             };
 
             writer.WriteValue(new DateTime(2000, 1, 1, 1, 1, 1, DateTimeKind.Unspecified));

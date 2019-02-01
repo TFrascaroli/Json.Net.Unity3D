@@ -25,7 +25,7 @@
 
 using System.Collections.Generic;
 
-namespace Newtonsoft.Json.Tests.TestObjects
+namespace Json.Lite.Tests.TestObjects
 {
     public class Name
     {

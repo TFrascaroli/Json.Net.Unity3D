@@ -27,9 +27,9 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 
-namespace Newtonsoft.Json
+namespace Json.Lite
 {
     internal enum JsonContainerType
     {

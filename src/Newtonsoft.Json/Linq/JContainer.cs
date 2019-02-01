@@ -31,7 +31,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 #endif
 using System.Threading;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 using System.Collections;
 using System.Globalization;
 using System.ComponentModel;
@@ -42,7 +42,7 @@ using System.Linq;
 
 #endif
 
-namespace Newtonsoft.Json.Linq
+namespace Json.Lite.Linq
 {
     /// <summary>
     /// Represents a token that can contain other tokens.

@@ -26,9 +26,9 @@
 #if !NO_BSON
 
 using System;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 
-namespace Newtonsoft.Json.Bson
+namespace Json.Lite.Bson
 {
     /// <summary>
     /// Represents a BSON Oid (object id).

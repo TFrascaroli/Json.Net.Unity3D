@@ -28,8 +28,8 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Reflection;
 using System.Runtime.Serialization;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json.Tests.TestObjects;
+using Json.Lite.Serialization;
+using Json.Lite.Tests.TestObjects;
 #if !(NET20 || NET35 || PORTABLE)
 using System.Numerics;
 #endif
@@ -46,13 +46,13 @@ using Assert = Newtonsoft.Json.Tests.XUnitAssert;
 #else
 using NUnit.Framework;
 #endif
-using Newtonsoft.Json.Bson;
+using Json.Lite.Bson;
 using System.IO;
-using Newtonsoft.Json.Tests.Serialization;
-using Newtonsoft.Json.Utilities;
-using Newtonsoft.Json.Linq;
+using Json.Lite.Tests.Serialization;
+using Json.Lite.Utilities;
+using Json.Lite.Linq;
 
-namespace Newtonsoft.Json.Tests.Bson
+namespace Json.Lite.Tests.Bson
 {
     [TestFixture]
     public class BsonReaderTests : TestFixtureBase

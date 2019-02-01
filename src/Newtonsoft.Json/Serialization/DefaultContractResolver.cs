@@ -45,9 +45,9 @@ using System.Security.Permissions;
 #if !UNITY3D
 using System.Xml.Serialization;
 #endif
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Utilities;
-using Newtonsoft.Json.Linq;
+using Json.Lite.Converters;
+using Json.Lite.Utilities;
+using Json.Lite.Linq;
 using System.Runtime.CompilerServices;
 #if NET20
 using Newtonsoft.Json.Utilities.LinqBridge;
@@ -56,7 +56,7 @@ using System.Linq;
 
 #endif
 
-namespace Newtonsoft.Json.Serialization
+namespace Json.Lite.Serialization
 {
     internal struct ResolverContractKey : IEquatable<ResolverContractKey>
     {

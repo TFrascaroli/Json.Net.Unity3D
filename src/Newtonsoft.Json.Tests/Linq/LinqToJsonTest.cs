@@ -38,10 +38,10 @@ using Assert = Newtonsoft.Json.Tests.XUnitAssert;
 #else
 using NUnit.Framework;
 #endif
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Tests.Serialization;
-using Newtonsoft.Json.Tests.TestObjects;
+using Json.Lite.Converters;
+using Json.Lite.Linq;
+using Json.Lite.Tests.Serialization;
+using Json.Lite.Tests.TestObjects;
 #if NET20
 using Newtonsoft.Json.Utilities.LinqBridge;
 #else
@@ -50,7 +50,7 @@ using System.Linq;
 using System.IO;
 using System.Runtime.Serialization;
 
-namespace Newtonsoft.Json.Tests.Linq
+namespace Json.Lite.Tests.Linq
 {
     [TestFixture]
     public class LinqToJsonTest : TestFixtureBase

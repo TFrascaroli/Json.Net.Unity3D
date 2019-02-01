@@ -28,7 +28,7 @@ using System.Runtime.Serialization;
 
 #if !NET20
 
-namespace Newtonsoft.Json.Tests.TestObjects
+namespace Json.Lite.Tests.TestObjects
 {
     [DataContract]
     public class Computer

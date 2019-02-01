@@ -28,11 +28,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Newtonsoft.Json.Utilities;
+using Json.Lite.Utilities;
 using System.Diagnostics;
 using System.Globalization;
 
-namespace Newtonsoft.Json.Linq
+namespace Json.Lite.Linq
 {
     /// <summary>
     /// Represents a JSON property.
