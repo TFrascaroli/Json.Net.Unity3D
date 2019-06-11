@@ -28,6 +28,7 @@
     <DefineConstants>TRACE;NET35;UNITY3D</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Json.Lite.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseLite|AnyCPU'">
     <OutputPath>bin\ReleaseLite\</OutputPath>
